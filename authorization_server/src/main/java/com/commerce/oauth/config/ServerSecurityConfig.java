@@ -37,7 +37,7 @@ public class ServerSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userDetailsService).passwordEncoder(userPasswordEncoder);
     }
 
-    @Override
+	@Override
     protected void configure(final HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/ouath/token").permitAll()

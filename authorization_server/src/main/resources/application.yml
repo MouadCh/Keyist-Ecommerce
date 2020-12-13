@@ -17,8 +17,8 @@ spring:
       minimum-idle: 1
       pool-name: data-source
     url: jdbc:mysql://localhost:3306/keyist?useSSL=false&useUnicode=yes&characterEncoding=UTF-8
-    password: password
-    username: username
+    username: root
+    password: 
   jpa:
     properties:
       hibernate:
